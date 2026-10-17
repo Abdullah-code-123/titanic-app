@@ -1,9 +1,9 @@
 """
-Titanic Passenger Survival Prediction - Student Demo App
+Titanic Passenger Survival Prediction - Streamlit App
 ----------------------------------------------------------
-A small Streamlit web app that lets students interact with the trained
-Support Vector Classifier from the "1a - Titanic Survival - Recommended
-Update" notebook, without needing to install Python or run Jupyter.
+A small Streamlit web app that lets users interact with the trained
+Support Vector Classifier from the Titanic Passenger Survival Prediction
+notebook, without needing to install Python or run Jupyter.
 
 It loads the same svc_trained_model.pkl produced by that notebook, and
 recreates the exact same LabelEncoders (fit on the same fixed category
@@ -56,7 +56,7 @@ encoders = build_label_encoders()
 st.title("🚢 Titanic Passenger Survival Predictor")
 st.markdown(
     """
-    This is a teaching demo built from the **Titanic Passenger Survival Prediction**
+    This is a demo built from the **Titanic Passenger Survival Prediction**
     notebook. Pick a passenger's details below and the trained Support Vector
     Classifier (SVC) will predict whether they would have survived.
 
@@ -102,7 +102,7 @@ if st.button("Predict Survival", type="primary", use_container_width=True):
 
 st.divider()
 st.caption(
-    "Built for teaching purposes from a 100-row simplified Titanic dataset. "
+    "Built from a 100-row simplified Titanic dataset. "
     "Predictions reflect patterns in this small toy dataset, not a rigorous "
     "historical analysis."
 )
